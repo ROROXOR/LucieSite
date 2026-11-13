@@ -397,6 +397,105 @@ section {
   color: var(--text-muted);
 }
 
+/* Trust row */
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.4rem;
+  margin-top: 1.5rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.trust-row span::before {
+  content: "✓ ";
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Motifs de consultation */
+.motifs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.motif-pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.92rem;
+  color: var(--text);
+}
+
+/* FAQ native accordion */
+.faq-list {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 780px;
+}
+
+.faq-list details {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.1rem 1.4rem;
+}
+
+.faq-list summary {
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.faq-list details[open] summary::after {
+  content: "−";
+}
+
+.faq-list details p {
+  margin: 0.85rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Page Mentions légales */
+.legal-main {
+  padding: 3.5rem 0 4.5rem;
+  max-width: 780px;
+}
+
+.legal-main h1 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.legal-main h2 {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin: 2rem 0 0.6rem;
+}
+
+.legal-main p {
+  color: var(--text-muted);
+}
+
 /* Responsive */
 @media (max-width: 860px) {
   .hero-grid,
